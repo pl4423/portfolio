@@ -1,0 +1,111 @@
+@import url('reset.css');
+
+/* General Demo Style */
+body{
+	background:#f7f7f7 url(../images/pattern.png) repeat top left;
+	color:#000;
+	font-family: 'futura', sans-serif;
+	font-size:13px;
+	min-height:2000px;
+}
+.wrapper a{
+	text-decoration:none;
+	background-image: url("http://nebula.wsimg.com/4b0941c383bd10b3d43b7f8aa20d26e1?AccessKeyId=C9703E4C439A68492EE1&disposition=0&alloworigin=1");
+}
+.clr{
+	clear:both;
+}
+nav {
+	text-decoration: none;
+	width: 100%;
+    margin:0;
+    padding:20px;
+    position: fixed;
+    top: 0;
+    color: yellow;
+}
+header h1 {
+	float: left;
+    padding-left: 100px;
+    padding-top: 20px;
+    font-size: 70px;
+    color: black;
+}
+nav ul li a:hover{
+	color: white;
+
+}
+
+h1{
+	padding:20px;
+	font-size:28px;
+	color:#333;
+	font-family: 'futura', sans-serif;
+	font-size: 80px;
+    text-align:left;
+    text-shadow:1px 1px 1px #fff;
+}
+h1 span{
+	font-size:18px;
+	color:#1693eb;
+}
+.more{
+	font-family: 'futura', sans-serif;
+	margin:0 auto;
+	text-align:center;
+	color:#ddd;
+	font-size:15px;
+	color:#444;
+}
+.more p{
+	display:block;
+	margin:10px;
+}
+.more a{
+	color:#666;
+	white-space: nowrap;
+	font-weight:bold;
+	background:#fff;
+	padding:1px 6px;
+	-webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+	-moz-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+	box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+}
+.more a.current,
+.more a.current:hover{
+	color:#fff;
+	background:#000;
+}
+.more a:hover{
+	background-color:#1693eb;
+	color:white;
+}
+/* Header Style */
+.header{
+	line-height:24px;
+	font-size:11px;
+	background:#000;
+	opacity:0.9;
+	text-transform:uppercase;
+	z-index:4;
+	-moz-box-shadow:1px 0px 2px #000;
+	-webkit-box-shadow:1px 0px 2px #000;
+	box-shadow:1px 0px 2px #000;
+}
+.header a{
+	padding:0px 10px;
+	letter-spacing:1px;
+	color:#ddd;
+	display:block;
+	float:left;
+}
+.header a:hover{
+	color:#fff;
+}
+.header span.right{
+	float:right;
+}
+.header span.right a{
+	float:none;
+	display:inline;
+}
