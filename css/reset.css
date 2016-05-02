@@ -1,4 +1,7 @@
 
+body, * {
+  box-sizing: border-box;
+}
 
 table {
 	border-collapse:collapse;
@@ -18,16 +21,19 @@ address,caption,cite,code,dfn,th,var {
 	font-weight:normal;
 }
 header {
-	float: left;
-	font-family: 'futura', sans-serif;
-    width: 270px;
-    height: 100%;
-    margin:20px;
-    padding:20px;
-    position: fixed;
-    top: 0;
-  	background-color: #4ECECE;
+  position: absolute;
+  font-family: 'futura', sans-serif;
+  width: 270px;
+  height: 100%;
+  margin:20px;
+  padding:20px;
+  background-color: #4ECECE;
+  /* Initially have menu as hidden */
+  visibility: hidden;
+  z-index: 9999;
 }
+
+
 header h1 { 
     
    	padding-top: 20px;
@@ -57,6 +63,30 @@ header nav ul li a:hover{
 	background-color:#1F4250;
 	color: white;
 }
+
+
+/* Mobile Menu */
+
+.mobile-header {
+  /* Clearfix */
+  overflow: hidden;
+  display: inline-block; /* Necessary to trigger "hasLayout" in IE */
+  display: block; /* Sets element back to block */
+}
+
+.mobile-header h1{
+  display: inline-block;
+  padding: .5rem;
+}
+
+.mobile-header-title {
+  float: left;
+}
+
+.mobile-header-menu {
+  float: right;
+}
+
 caption,th {
 	text-align:left;
 }
@@ -68,4 +98,24 @@ q:before,q:after {
 	content:'';
 }
 abbr,acronym { border:0;
+}
+
+
+/* Media Queries */
+
+/* Medium/Tablet Size*/
+@media only screen and (min-device-width : 768px) {
+
+  /* Styles */
+  header {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+  }
+
+  .wrapper {
+    margin-left: 300px;
+  }
+
+
 }
