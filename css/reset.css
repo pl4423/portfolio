@@ -72,6 +72,9 @@ header nav ul li a:hover{
   overflow: hidden;
   display: inline-block; /* Necessary to trigger "hasLayout" in IE */
   display: block; /* Sets element back to block */
+  font-family: 'futura', sans-serif;
+  background: #4ECECE;
+
 }
 
 .mobile-header h1{
@@ -81,6 +84,7 @@ header nav ul li a:hover{
 
 .mobile-header-title {
   float: left;
+
 }
 
 .mobile-header-menu {
@@ -117,5 +121,8 @@ abbr,acronym { border:0;
     margin-left: 300px;
   }
 
+.mobile-header {
+    display: none;
 
+  }
 }

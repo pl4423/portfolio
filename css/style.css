@@ -1,8 +1,7 @@
 /* Flexible Slide-to-top Accordion Style*/
 .wrapper{
 	width:100%;
-	max-width:1200px;
-	margin-left: 320px;
+	max-width:1200px;	
 	margin-top: 50px;
 	padding-top: 20px;
 }
@@ -24,7 +23,7 @@
 .st-accordion ul li > a{
     font-family: 'futura', sans-serif;
     color: black;
-    font-size: 46px;
+    font-size: 36px;
     display: block;
     position: relative;
     line-height: 100px;
@@ -81,7 +80,7 @@
  padding:0px 200px 20px 0px; 
 }
 .st-content h2 {
-	font-size: 40px;
+	font-size: 30px;
 }
 .st-content img{
    max-width: 100%;
@@ -91,10 +90,19 @@
 
    
 }
+.st-content2 img{
+   max-width: 100%;
+   max-height: 100%;
+   width: auto;
+   height: auto;
+
+   
+}
+
 
 @media screen and (max-width: 320px){
 	.st-accordion ul li > a{
-		font-size:36px;
+		font-size:26px;
 	}
 }
 
@@ -103,7 +111,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: left;
-	
+
 }
 .st-content ul li{
 	
@@ -112,6 +120,8 @@
 	margin: 1%;
 	font-size: 0;
 	border: none;
+	font-size: 12px;
+	
 
 }
 .st-content iframe { 
