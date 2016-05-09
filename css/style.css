@@ -117,10 +117,12 @@
 	
 
 }
-.st-content iframe { 
-	
-	margin: 1%;
 
+
+}
+.st-content p{
+	padding: 0;
+	margin: 0 auto;
 }
 
 /* Media Queries */
@@ -134,5 +136,9 @@
     margin-left: 300px;
   }
 
+.st-content p{
+	padding: 0;
+	margin: 0 auto;
+}
 
 }
